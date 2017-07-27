@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+    <div data-role="header" style="background-color: #06fbb8; color:white">
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">Home</a>
+        <h1>Restaurant</h1>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow glyphicon ui-icon-cart ui-btn-icon-left ">Cart</a>
+    </div>
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#">Pizza</a></li>
+            <li><a href="#">Pasta</a></li>
+            <li><a href="#">Drinks</a></li>
+            <li><a href="#">Desserts</a></li>
+        </ul>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <div class="ui-content">
+            <form method="get" action="order3.html">
+                <fieldset data-role="controlgroup">
+                    <legend>Pizza</legend>
+                    <label for="Margarita">Margarita<span class="ui-li-count">25 Euro</span></a></label>
+                    <input type="checkbox" name="pizza" id="Margarita" value="Margarita">
+                    <label for="Greek">Greek <span class="ui-li-count">25 Euro</span></a></label>
+                    <input type="checkbox" name="pizza" id="Greek" value="Greek">
+                    <label for="Neapolitan ">Neapolitan <span class="ui-li-count">25 Euro</span></a></label>
+                    <input type="checkbox" name="pizza" id="Neapolitan " value="Neapolitan">
+                    <label for="Neapolitan ">Capricciosa <span class="ui-li-count">25 Euro</span></a></label>
+                    <input type="checkbox" name="pizza" id="Neapolitan " value="Neapolitan">
+                    <label for="Neapolitan ">Pizza Capricciosa <span class="ui-li-count">25 Euro</span></a></label>
+                    <input type="checkbox" name="pizza" id="Neapolitan " value="Neapolitan">
+                </fieldset>
+                <!--<fieldset data-role="controlgroup">-->
+                    <!--<legend>Pasta</legend>-->
+                    <!--<label for="Carbonara">Carbonara</label>-->
+                    <!--<input type="checkbox" name="mac" id="Carbonara" value="Carbonara">-->
+                    <!--<label for="Penne alla Bolognese ">Penne alla Bolognese </label>-->
+                    <!--<input type="checkbox" name="mac" id="Penne alla Bolognese " value="Penne alla Bolognese ">-->
+                    <!--<label for="Rigatoni alla Carbonara ">Rigatoni alla Carbonara </label>-->
+                    <!--<input type="checkbox" name="mac" id="Rigatoni alla Carbonara " value="Neapolitan">-->
+                <!--</fieldset>-->
+
+
+                <input type="submit" data-inline="true" value="Send Order">
+            </form>
+        </div>
+    </div>
+
+    <div data-role="footer">
+        <h1>Tabify App</h1>
+    </div>
+</div>
+
+</body>
+</html>

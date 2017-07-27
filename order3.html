@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+    <div data-role="header" style="background-color: #06fbb8; color:white">
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">Home</a>
+        <h1>Restaurant</h1>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow glyphicon ui-icon-cart ui-btn-icon-left ">Cart</a>
+    </div>
+    <div data-role="navbar">
+        <ul>
+            <!--<li><a href="#">Menu/a></li>-->
+            <li><a href="#">Your Order</a></li>
+            <!--<li><a href="#">Drinks</a></li>-->
+            <!--<li><a href="#">Desserts</a></li>-->
+        </ul>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <div class="ui-content" >
+            <div style="text-align:center;">
+            <img src="/images/pizza.jpg">
+            </div>
+            <div data-role="main" class="ui-content">
+                <form method="post" action="/action_page_post.php">
+                    <fieldset class="ui-field-contain">
+                        <label for="day">Select size</label>
+                        <select name="day" id="day" data-native-menu="false">
+                            <option value="mon">Small</option>
+                            <option value="tue">Medium</option>
+                            <option value="wed">Large</option>
+                        </select>
+                    </fieldset>
+
+
+
+                    <div class="ui-field-contain">
+                        <fieldset data-role="controlgroup">
+                            <legend>Choose ingredients:</legend>
+                            <label for="red">Peperoni</label>
+                            <input type="checkbox" name="favcolor" id="red" value="red">
+                            <label for="green">Extra Cheese</label>
+                            <input type="checkbox" name="favcolor" id="green" value="green">
+                            <label for="blue">Extra Tomatoes</label>
+                            <input type="checkbox" name="favcolor" id="blue" value="blue">
+                        </fieldset>
+                    </div>
+            <input type="submit" data-inline="true" value="Submit">
+            </form>
+
+        </div>
+    </div>
+
+    <div data-role="footer">
+        <h1>Tabify App</h1>
+    </div>
+</div>
+
+</body>
+</html>
